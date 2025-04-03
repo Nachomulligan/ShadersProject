@@ -24,7 +24,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _Shirt:
-        m_Texture: {fileID: 2800000, guid: 0141fb5f573bdb641b7fa5daf541ede1, type: 3}
+        m_Texture: {fileID: 2800000, guid: 59379b62734ecc54f9457a6ea1316b24, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Shorts:
@@ -51,7 +51,7 @@ Material:
     - _Color1: {r: 0, g: 0.56953615, b: 1, a: 0}
     - _Color2: {r: 0.39030075, g: 0, b: 1, a: 0}
     - _ColorA: {r: 0.6679048, g: 0.9006932, b: 0.4747397, a: 1}
-    - _ColorB: {r: 0.3444773, g: 0.14140636, b: 0.61193633, a: 1}
+    - _ColorB: {r: 0.34200078, g: 0, b: 0, a: 1}
     - _ColorC: {r: 0.14635941, g: 0.29990065, b: 0.6961364, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
