@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Crack
+  m_Shader: {fileID: 4800000, guid: 9e541c3931602a543a1a241762d6da60, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 2000
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _LavaFlowmap:
+        m_Texture: {fileID: 2800000, guid: ac7820fe27c3f354cbd795b62b9668c0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _LavaTex:
+        m_Texture: {fileID: 2800000, guid: 4020ff76a8f89d74d97cb87949e7df7e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParedesNormal:
+        m_Texture: {fileID: 2800000, guid: 8863a610d4048664dba4babace5a9800, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParedesTex:
+        m_Texture: {fileID: 2800000, guid: 688da5f4a0f6d5d4bb33cef25c41beed, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TextureSample0:
+        m_Texture: {fileID: 2800000, guid: 4020ff76a8f89d74d97cb87949e7df7e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Float0: 1.28
+    - _Float1: 0
+    - _IluminationFallOff: 2.54
+    - _IluminationHeight: 1.05
+    - _IluminationScale: 1.78
+    - _LavaDistortionIntensity: 0.049970992
+    - _ParedesNormalScale: 1.1058824
+    - __dirty: 0
+    m_Colors:
+    - _LavaSpeed: {r: -0.05, g: 0.1, b: 0, a: 0}
+    - _ParedesIluminationColor: {r: 0.6981132, g: 0.16544239, b: 0, a: 0}
+    - _Vector0: {r: 1, g: 0.48, b: 0, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
