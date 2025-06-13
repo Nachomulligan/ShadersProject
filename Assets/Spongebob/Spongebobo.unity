@@ -183,6 +183,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -8554220381499555137, guid: b32d3a5ab7b75ed4ebaba42684b2baff, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 4de00a4166988ba45abe3e60bb99eab1, type: 2}
+    - target: {fileID: -4969190816927926019, guid: b32d3a5ab7b75ed4ebaba42684b2baff, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6021adc1987dc884ab1a8e90f7115bce, type: 2}
     - target: {fileID: 919132149155446097, guid: b32d3a5ab7b75ed4ebaba42684b2baff, type: 3}
       propertyPath: m_Name
       value: jf04
