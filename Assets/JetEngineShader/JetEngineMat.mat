@@ -33,10 +33,12 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _EnginePower: 1.74
-    - _Float0: 0.551
-    - _Float2: 0.5147532
-    - _Gradient: 0.5348831
+    - _EnginePower: 0.37529412
+    - _Float0: 0.0009816018
+    - _Float2: 0.97608
+    - _Float3: 0
+    - _Float4: 10.02
+    - _Gradient: 0.0958812
     - _NoiseSpeed: 0.9954542
     - _NoiseTiling: 3.1
     - _Thrust: 0.557
