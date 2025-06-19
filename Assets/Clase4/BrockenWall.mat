@@ -42,7 +42,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _Float0: 0.105538584
-    - _NoiseScale: 0.23
+    - _NoiseScale: 0.02
     - _TexScale: 0.17
     - _ThreshHold: 0.10898222
     - _ThreshHoldConcret: 0.11764706
