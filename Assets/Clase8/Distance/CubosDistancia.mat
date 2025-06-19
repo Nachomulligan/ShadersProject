@@ -37,7 +37,7 @@ Material:
     - __dirty: 0
     m_Colors:
     - _Color0: {r: 0.6431373, g: 0, b: 0.21048567, a: 0}
-    - _Color1: {r: 0.7924528, g: 0.63591516, b: 0.15325734, a: 0}
+    - _Color1: {r: 0.7924528, g: 0.63591516, b: 0.15325731, a: 0}
     - _Point: {r: 5.92, g: 9.87, b: -26.2, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

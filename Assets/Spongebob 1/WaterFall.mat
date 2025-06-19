@@ -24,7 +24,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _FlowMap:
-        m_Texture: {fileID: 2800000, guid: ac7820fe27c3f354cbd795b62b9668c0, type: 3}
+        m_Texture: {fileID: 2800000, guid: b92e5f138ffc68b449e717d9c16e0c99, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _FlowMap1:
