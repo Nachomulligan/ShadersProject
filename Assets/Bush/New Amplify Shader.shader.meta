@@ -2,7 +2,8 @@ fileFormatVersion: 2
 guid: 4c1edf368547c214abb92fbac14e811c
 ShaderImporter:
   externalObjects: {}
-  defaultTextures: []
+  defaultTextures:
+  - _B_Fooliage_Color: {fileID: 2800000, guid: 4ec66ce84431d014dbf8a36b6722d902, type: 3}
   nonModifiableTextures: []
   userData: 
   assetBundleName: 
