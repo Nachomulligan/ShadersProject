@@ -146,7 +146,7 @@ Shader "ToonWater"
 }
 /*ASEBEGIN
 Version=18900
-0;622;1465;372;2946.32;619.8098;3.351861;True;False
+0;633;1465;361;143.9411;113.9955;1.3;True;False
 Node;AmplifyShaderEditor.TextureCoordinatesNode;19;-1511.048,-218.6543;Inherit;False;0;-1;2;3;2;SAMPLER2D;;False;0;FLOAT2;1,1;False;1;FLOAT2;0,0;False;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.RangedFloatNode;18;-1450.222,-76.85714;Inherit;False;Property;_FlowSpeed;FlowSpeed;5;0;Create;True;0;0;0;False;0;False;-0.1;0;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.PannerNode;17;-1195.072,-129.5199;Inherit;False;3;0;FLOAT2;0,0;False;2;FLOAT2;0,0;False;1;FLOAT;1;False;1;FLOAT2;0
@@ -193,4 +193,4 @@ WireConnection;9;1;3;0
 WireConnection;0;2;29;0
 WireConnection;0;9;28;0
 ASEEND*/
-//CHKSM=FD03D1D8904C50DA3FA5B210BBCD38697D433958
+//CHKSM=75FD57B49E624147BADC9DE4512CB50510BCBA01
