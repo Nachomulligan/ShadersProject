@@ -33,11 +33,13 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _EnginePower: 0.3813396
-    - _Float0: 0.5348831
+    - _EnginePower: 1.74
+    - _Float0: 0.551
     - _Float2: 0.5147532
+    - _Gradient: 0.5348831
+    - _NoiseSpeed: 0.9954542
     - _NoiseTiling: 3.1
-    - _Thrust: 0.5104519
+    - _Thrust: 0.557
     - __dirty: 0
     m_Colors: []
   m_BuildTextureStacks: []
