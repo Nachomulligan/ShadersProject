@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ToonWater
-  m_Shader: {fileID: 4800000, guid: ef4f4c1c359a9624a959a56cd6b9f3d8, type: 3}
+  m_Name: WaterFall
+  m_Shader: {fileID: 4800000, guid: ab70be90df1822546b9f00b61c950a5f, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -16,7 +16,7 @@ Material:
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3000
+  m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
   m_LockedProperties: 
@@ -24,11 +24,19 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _FlowMap:
-        m_Texture: {fileID: 2800000, guid: e43707bced120a9419fcd9f7426ace66, type: 3}
+        m_Texture: {fileID: 2800000, guid: ac7820fe27c3f354cbd795b62b9668c0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FlowMap1:
+        m_Texture: {fileID: 2800000, guid: ac7820fe27c3f354cbd795b62b9668c0, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: f4ee1ec49089f574fa5a00b24620bdef, type: 3}
+        m_Texture: {fileID: 2800000, guid: c1ca1809e4a98254b8610a2fdb30e7bc, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex1:
+        m_Texture: {fileID: 2800000, guid: c1ca1809e4a98254b8610a2fdb30e7bc, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _texcoord:
@@ -37,15 +45,19 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Distance: 1
-    - _FallOff: 1.5
-    - _Float0: 0.1
-    - _FlorIntencity: 0.192
-    - _FlowSpeed: 0
-    - _Range: 0.81
-    - _Tiling: 3
+    - _FallOff: 0
+    - _FallOff1: 0
+    - _FlorIntencity: 0.93
+    - _FlorIntencity1: 0.93
+    - _FlowSpeed: 0.1
+    - _FlowSpeed1: -0.1
+    - _Range: 0
+    - _Range1: 0
+    - _Tiling: 1
+    - _Tiling1: 1
     - __dirty: 0
     m_Colors:
     - _Speed: {r: 0.1, g: 0.1, b: 0, a: 0}
+    - _Speed1: {r: 0.1, g: 0.1, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
