@@ -37,12 +37,12 @@ Material:
     - _Float0: 0.0009816018
     - _Float2: 0.97608
     - _Float3: 0
-    - _Float4: 10.02
-    - _Gradient: 0.0958812
+    - _Float4: -9.29
+    - _Gradient: 0.12939914
     - _NoiseSpeed: 0.9954542
-    - _NoiseTiling: 3.1
+    - _NoiseTiling: 4.04
     - _Thrust: 0.557
-    - __dirty: 0
+    - __dirty: 1
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1

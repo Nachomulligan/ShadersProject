@@ -81,13 +81,13 @@ Material:
     - _Metallic: 0
     - _Mode: 3
     - _Mov_Scale: 0.17
-    - _MovementIntensity: 0.04
-    - _NoiseScale: 0.69
+    - _MovementIntensity: 0.01
+    - _NoiseScale: 0.7
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 1
     - _SpecularHighlights: 1
-    - _Speed: 0.1
+    - _Speed: 0.78
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 0
