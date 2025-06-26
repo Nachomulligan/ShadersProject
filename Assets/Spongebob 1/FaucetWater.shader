@@ -96,7 +96,7 @@ Shader "FaucetWater"
 }
 /*ASEBEGIN
 Version=18900
-0;402;1467;592;1791.969;509.3516;2.012918;True;False
+0;463;1467;531;1592.004;460.8708;1.780576;True;False
 Node;AmplifyShaderEditor.CommentaryNode;23;-819.5768,-425.4488;Inherit;False;1448.799;776.7393;Color and Speed;14;3;1;4;2;6;8;5;7;9;16;15;10;17;12;;1,1,1,1;0;0
 Node;AmplifyShaderEditor.RangedFloatNode;3;-759.9818,170.6138;Inherit;False;Property;_Speed;Speed;1;0;Create;True;0;0;0;False;0;False;4;5.53;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleTimeNode;4;-528.7283,144.7402;Inherit;False;1;0;FLOAT;1;False;1;FLOAT;0
@@ -136,4 +136,4 @@ WireConnection;12;2;10;0
 WireConnection;0;2;12;0
 WireConnection;0;11;20;0
 ASEEND*/
-//CHKSM=98E1EF50479E60C3F1407858FADA6BAEF95D6204
+//CHKSM=1EFFBF4A96F1386863B2AA26D4F3CE0364FC86C8

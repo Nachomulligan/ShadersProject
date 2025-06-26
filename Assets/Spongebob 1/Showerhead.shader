@@ -100,7 +100,7 @@ Shader "Showerhead"
 }
 /*ASEBEGIN
 Version=18900
-0;402;1467;592;2060.107;544.9508;2.105934;True;False
+0;463;1467;531;1467.054;216.699;1.805934;True;False
 Node;AmplifyShaderEditor.CommentaryNode;49;-1196.336,-433.2963;Inherit;False;1831.805;876.1705;WorldsPosition and Textures;13;24;25;27;41;46;34;37;1;39;40;36;48;42;;1,1,1,1;0;0
 Node;AmplifyShaderEditor.WorldPosInputsNode;24;-1146.336,146.0362;Inherit;False;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
 Node;AmplifyShaderEditor.CommentaryNode;43;-732.8762,509.4122;Inherit;False;1122.176;456.79;Noise;8;47;33;45;32;30;31;28;29;;1,1,1,1;0;0
@@ -111,9 +111,9 @@ Node;AmplifyShaderEditor.VoronoiNode;28;-445.5674,611.5197;Inherit;False;0;1;1;0
 Node;AmplifyShaderEditor.StepOpNode;30;-46.31353,558.4122;Inherit;False;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.RangedFloatNode;32;-320.1609,868.2805;Inherit;False;Constant;_ThresholdRust2;ThresholdRust2;3;0;Create;True;0;0;0;False;0;False;0.1930269;0;0;1;0;1;FLOAT;0
 Node;AmplifyShaderEditor.RangedFloatNode;27;-852.3527,13.577;Inherit;False;Property;_Scale;Scale;1;0;Create;True;0;0;0;False;0;False;0.25;0;0;0;0;1;FLOAT;0
-Node;AmplifyShaderEditor.SimpleMultiplyOpNode;41;-663.5319,-37.5849;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT2;0,0;False;1;FLOAT2;0
-Node;AmplifyShaderEditor.StepOpNode;33;25.54002,703.1801;Inherit;False;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.RegisterLocalVarNode;45;102.8021,557.4764;Float;False;Step1;-1;True;1;0;FLOAT;0;False;1;FLOAT;0
+Node;AmplifyShaderEditor.StepOpNode;33;25.54002,703.1801;Inherit;False;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0
+Node;AmplifyShaderEditor.SimpleMultiplyOpNode;41;-663.5319,-37.5849;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT2;0,0;False;1;FLOAT2;0
 Node;AmplifyShaderEditor.RegisterLocalVarNode;47;188.9701,697.1232;Inherit;False;Step2;-1;True;1;0;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.GetLocalVarNode;46;-31.19788,-0.5235596;Inherit;False;45;Step1;1;0;OBJECT;;False;1;FLOAT;0
 Node;AmplifyShaderEditor.SamplerNode;34;-327.8047,27.27066;Inherit;True;Property;_TextureSample1;Texture Sample 1;3;0;Create;True;0;0;0;False;0;False;-1;fc395b0d6bf0b2f4c8efe18e70818af4;fc395b0d6bf0b2f4c8efe18e70818af4;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
@@ -131,11 +131,11 @@ WireConnection;28;0;25;0
 WireConnection;28;2;29;0
 WireConnection;30;0;28;0
 WireConnection;30;1;31;0
-WireConnection;41;0;27;0
-WireConnection;41;1;25;0
+WireConnection;45;0;30;0
 WireConnection;33;0;28;0
 WireConnection;33;1;32;0
-WireConnection;45;0;30;0
+WireConnection;41;0;27;0
+WireConnection;41;1;25;0
 WireConnection;47;0;33;0
 WireConnection;34;1;41;0
 WireConnection;37;1;41;0
@@ -150,4 +150,4 @@ WireConnection;42;1;40;0
 WireConnection;42;2;48;0
 WireConnection;0;0;42;0
 ASEEND*/
-//CHKSM=C01E700A2E738469ACCEA38465E21B82A01B0B7D
+//CHKSM=968B41D2A14916C970784786270DFE04343101D6

@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: FlyingDutchman+
+  m_Name: Flying
   m_Shader: {fileID: 4800000, guid: a2a624608d8fced4699a4b1f3dda209a, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -26,6 +26,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _NoiseScale: 0.1
+    - _YMovement: 8.98
     - __dirty: 0
     m_Colors: []
   m_BuildTextureStacks: []

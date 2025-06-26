@@ -55,8 +55,7 @@ Shader "Water"
 			float mulTime5 = _Time.y * _Speed;
 			float temp_output_9_0 = sin( ( ( distance( ase_vertex3Pos , float3( 0,0,0 ) ) + mulTime5 ) * _Frecuency ) );
 			float4 lerpResult11 = lerp( float4( 0,0,0,0 ) , color12 , (0.6 + (temp_output_9_0 - -1.0) * (1.0 - 0.6) / (1.0 - -1.0)));
-			float4 temp_output_13_0 = saturate( lerpResult11 );
-			o.Emission = temp_output_13_0.rgb;
+			o.Emission = saturate( lerpResult11 ).rgb;
 			float4 ase_screenPos = float4( i.screenPos.xyz , i.screenPos.w + 0.00000000001 );
 			float4 ase_screenPosNorm = ase_screenPos / ase_screenPos.w;
 			ase_screenPosNorm.z = ( UNITY_NEAR_CLIP_VALUE >= 0 ) ? ase_screenPosNorm.z : ase_screenPosNorm.z * 0.5 + 0.5;
@@ -146,7 +145,7 @@ Shader "Water"
 }
 /*ASEBEGIN
 Version=18900
-0;402;1467;592;2369.316;600.7883;3.006391;False;False
+0;463;1467;531;2366.31;152.8361;3.006391;True;False
 Node;AmplifyShaderEditor.CommentaryNode;30;-1018.759,-235.6947;Inherit;False;1497.562;568.7122;Speed and movement;12;3;1;2;5;6;8;7;9;10;12;11;13;;1,1,1,1;0;0
 Node;AmplifyShaderEditor.PosVertexDataNode;1;-929.7642,-67.32104;Inherit;False;0;0;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.RangedFloatNode;3;-968.7592,154.1706;Inherit;False;Property;_Speed;Speed;0;0;Create;True;0;0;0;False;0;False;-0.3;-0.3;0;0;0;1;FLOAT;0
@@ -160,9 +159,9 @@ Node;AmplifyShaderEditor.DepthFade;20;-460.2654,1063.658;Inherit;False;True;Fals
 Node;AmplifyShaderEditor.SimpleDivideOpNode;23;-100.2654,1064.658;Inherit;False;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.RangedFloatNode;22;-101.645,1234.577;Inherit;False;Property;_FallOff;FallOff;5;0;Create;True;0;0;0;False;0;False;0;2.03;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;7;-357.3428,114.3554;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0
-Node;AmplifyShaderEditor.CommentaryNode;29;-136.9601,495.7556;Inherit;False;849.3932;487.7611;HeightOffset;5;18;15;17;14;19;;1,1,1,1;0;0
-Node;AmplifyShaderEditor.SinOpNode;9;-216.3422,161.3556;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.PowerNode;24;79.73437,1095.658;Inherit;False;False;2;0;FLOAT;0;False;1;FLOAT;1;False;1;FLOAT;0
+Node;AmplifyShaderEditor.SinOpNode;9;-216.3422,161.3556;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
+Node;AmplifyShaderEditor.CommentaryNode;29;-136.9601,495.7556;Inherit;False;849.3932;487.7611;HeightOffset;5;18;15;17;14;19;;1,1,1,1;0;0
 Node;AmplifyShaderEditor.SaturateNode;25;247.6635,1103.595;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.TFHCRemapNode;10;-66.0546,-18.49922;Inherit;False;5;0;FLOAT;0;False;1;FLOAT;-1;False;2;FLOAT;1;False;3;FLOAT;0.6;False;4;FLOAT;1;False;1;FLOAT;0
 Node;AmplifyShaderEditor.Vector3Node;17;2.039907,693.3562;Inherit;False;Constant;_Vector0;Vector 0;3;0;Create;True;0;0;0;False;0;False;0,1,0;0,0,0;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
@@ -185,9 +184,9 @@ WireConnection;23;0;20;0
 WireConnection;23;1;21;0
 WireConnection;7;0;6;0
 WireConnection;7;1;8;0
-WireConnection;9;0;7;0
 WireConnection;24;0;23;0
 WireConnection;24;1;22;0
+WireConnection;9;0;7;0
 WireConnection;25;0;24;0
 WireConnection;10;0;9;0
 WireConnection;11;1;12;0
@@ -203,4 +202,4 @@ WireConnection;0;2;13;0
 WireConnection;0;9;28;0
 WireConnection;0;11;19;0
 ASEEND*/
-//CHKSM=EE524991D762BA16822711916B1AE83B1C136CDC
+//CHKSM=19621090F3A9A2946D31251DAB62A0B8676167DA
