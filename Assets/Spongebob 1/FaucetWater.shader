@@ -77,7 +77,7 @@ Shader "FaucetWater"
 
 		void surf( Input i , inout SurfaceOutputStandard o )
 		{
-			float4 color16 = IsGammaSpace() ? float4(0.2511125,0.5377358,0.5028762,0) : float4(0.05132259,0.2506461,0.216713,0);
+			float4 color16 = IsGammaSpace() ? float4(0.2511125,0.5377358,0.5028762,0) : float4(0.0513226,0.2506461,0.216713,0);
 			float4 color15 = IsGammaSpace() ? float4(0,0.4622642,0.4622642,0) : float4(0,0.1807607,0.1807607,0);
 			float3 ase_vertex3Pos = mul( unity_WorldToObject, float4( i.worldPos , 1 ) );
 			float mulTime4 = _Time.y * _Speed;
@@ -96,25 +96,27 @@ Shader "FaucetWater"
 }
 /*ASEBEGIN
 Version=18900
-0;633;1465;361;671.6964;331.7996;1;True;False
-Node;AmplifyShaderEditor.RangedFloatNode;3;-581.5,191.5;Inherit;False;Property;_Speed;Speed;1;0;Create;True;0;0;0;False;0;False;4;5.53;0;0;0;1;FLOAT;0
-Node;AmplifyShaderEditor.PosVertexDataNode;1;-583.5,21.5;Inherit;False;0;0;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.SimpleTimeNode;4;-420.5,205.5;Inherit;False;1;0;FLOAT;1;False;1;FLOAT;0
-Node;AmplifyShaderEditor.RangedFloatNode;6;-273.0498,334.8651;Inherit;False;Property;_NoiseScale;NoiseScale;0;0;Create;True;0;0;0;False;0;False;1;1;0;0;0;1;FLOAT;0
+0;402;1467;592;1791.969;509.3516;2.012918;True;False
+Node;AmplifyShaderEditor.CommentaryNode;23;-819.5768,-425.4488;Inherit;False;1448.799;776.7393;Color and Speed;14;3;1;4;2;6;8;5;7;9;16;15;10;17;12;;1,1,1,1;0;0
+Node;AmplifyShaderEditor.RangedFloatNode;3;-759.9818,170.6138;Inherit;False;Property;_Speed;Speed;1;0;Create;True;0;0;0;False;0;False;4;5.53;0;0;0;1;FLOAT;0
+Node;AmplifyShaderEditor.SimpleTimeNode;4;-528.7283,144.7402;Inherit;False;1;0;FLOAT;1;False;1;FLOAT;0
+Node;AmplifyShaderEditor.PosVertexDataNode;1;-769.5768,4.411349;Inherit;False;0;0;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.RangedFloatNode;6;-438.2404,236.1305;Inherit;False;Property;_NoiseScale;NoiseScale;0;0;Create;True;0;0;0;False;0;False;1;1;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleAddOpNode;2;-336.5,38.5;Inherit;False;2;2;0;FLOAT3;0,0,0;False;1;FLOAT;0;False;1;FLOAT3;0
+Node;AmplifyShaderEditor.RangedFloatNode;8;-171.5024,207.3864;Inherit;False;Property;_Intensity;Intensity;2;0;Create;True;0;0;0;False;0;False;1;1;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.NoiseGeneratorNode;5;-208.5,82.5;Inherit;False;Simplex2D;True;False;2;0;FLOAT2;0,0;False;1;FLOAT;1;False;1;FLOAT;0
-Node;AmplifyShaderEditor.RangedFloatNode;8;-110.7426,237.7663;Inherit;False;Property;_Intensity;Intensity;2;0;Create;True;0;0;0;False;0;False;1;1;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;7;18.24677,130.7087;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0
+Node;AmplifyShaderEditor.CommentaryNode;22;125.3175,371.558;Inherit;False;580.4807;390.64;Water Offset;3;21;19;20;;1,1,1,1;0;0
 Node;AmplifyShaderEditor.SinOpNode;9;161.8859,140.2717;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
-Node;AmplifyShaderEditor.NormalVertexDataNode;21;144.5437,293.4943;Inherit;True;0;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.Vector3Node;19;320.3178,577.5577;Inherit;False;Property;_Vector1;Vector 1;3;0;Create;True;0;0;0;False;0;False;1,0,1;1,0,1;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
+Node;AmplifyShaderEditor.NormalVertexDataNode;21;175.3176,421.558;Inherit;False;0;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.SaturateNode;17;334.5437,214.4943;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.ColorNode;16;107.6121,-375.4488;Inherit;False;Constant;_Color1;Color 1;0;0;Create;True;0;0;0;False;0;False;0.2511125,0.5377358,0.5028762,0;0,0,0,0;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.ColorNode;15;106.6121,-189.4488;Inherit;False;Constant;_Color0;Color 0;0;0;Create;True;0;0;0;False;0;False;0,0.4622642,0.4622642,0;0,0,0,0;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.TFHCRemapNode;10;279.6121,-57.44876;Inherit;False;5;0;FLOAT;0;False;1;FLOAT;-1;False;2;FLOAT;1;False;3;FLOAT;0.6;False;4;FLOAT;1;False;1;FLOAT;0
-Node;AmplifyShaderEditor.Vector3Node;19;289.5437,449.4943;Inherit;False;Property;_Vector1;Vector 1;3;0;Create;True;0;0;0;False;0;False;1,0,1;1,0,1;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
+Node;AmplifyShaderEditor.TFHCRemapNode;10;349.8656,-21.37272;Inherit;False;5;0;FLOAT;0;False;1;FLOAT;-1;False;2;FLOAT;1;False;3;FLOAT;0.6;False;4;FLOAT;1;False;1;FLOAT;0
+Node;AmplifyShaderEditor.SimpleMultiplyOpNode;20;542.3184,488.558;Inherit;False;3;3;0;FLOAT;0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;1;FLOAT3;0
 Node;AmplifyShaderEditor.LerpOp;12;446.6121,-186.4488;Inherit;False;3;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;2;FLOAT;0;False;1;COLOR;0
-Node;AmplifyShaderEditor.SimpleMultiplyOpNode;20;511.5437,360.4943;Inherit;False;3;3;0;FLOAT;0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;1;FLOAT3;0
-Node;AmplifyShaderEditor.StandardSurfaceOutputNode;0;645.897,-33.97821;Float;False;True;-1;2;ASEMaterialInspector;0;0;Standard;FaucetWater;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;Back;0;False;-1;0;False;-1;False;0;False;-1;0;False;-1;False;0;Opaque;0.5;True;True;0;False;Opaque;;Geometry;All;14;all;True;True;True;True;0;False;-1;False;0;False;-1;255;False;-1;255;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;False;2;15;10;25;False;0.5;True;0;0;False;-1;0;False;-1;0;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;0;0,0,0,0;VertexOffset;True;False;Cylindrical;False;Relative;0;;-1;-1;-1;-1;0;False;0;0;False;-1;-1;0;False;-1;0;0;0;False;0.1;False;-1;0;False;-1;False;16;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT3;0,0,0;False;7;FLOAT3;0,0,0;False;8;FLOAT;0;False;9;FLOAT;0;False;10;FLOAT;0;False;13;FLOAT3;0,0,0;False;11;FLOAT3;0,0,0;False;12;FLOAT3;0,0,0;False;14;FLOAT4;0,0,0,0;False;15;FLOAT3;0,0,0;False;0
+Node;AmplifyShaderEditor.StandardSurfaceOutputNode;0;800.5002,-100.4341;Float;False;True;-1;2;ASEMaterialInspector;0;0;Standard;FaucetWater;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;Back;0;False;-1;0;False;-1;False;0;False;-1;0;False;-1;False;0;Opaque;0.5;True;True;0;False;Opaque;;Geometry;All;14;all;True;True;True;True;0;False;-1;False;0;False;-1;255;False;-1;255;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;False;2;15;10;25;False;0.5;True;0;0;False;-1;0;False;-1;0;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;0;0,0,0,0;VertexOffset;True;False;Cylindrical;False;Relative;0;;-1;-1;-1;-1;0;False;0;0;False;-1;-1;0;False;-1;0;0;0;False;0.1;False;-1;0;False;-1;False;16;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT3;0,0,0;False;7;FLOAT3;0,0,0;False;8;FLOAT;0;False;9;FLOAT;0;False;10;FLOAT;0;False;13;FLOAT3;0,0,0;False;11;FLOAT3;0,0,0;False;12;FLOAT3;0,0,0;False;14;FLOAT4;0,0,0,0;False;15;FLOAT3;0,0,0;False;0
 WireConnection;4;0;3;0
 WireConnection;2;0;1;0
 WireConnection;2;1;4;0
@@ -125,13 +127,13 @@ WireConnection;7;1;8;0
 WireConnection;9;0;7;0
 WireConnection;17;0;9;0
 WireConnection;10;0;9;0
-WireConnection;12;0;16;0
-WireConnection;12;1;15;0
-WireConnection;12;2;10;0
 WireConnection;20;0;17;0
 WireConnection;20;1;21;0
 WireConnection;20;2;19;0
+WireConnection;12;0;16;0
+WireConnection;12;1;15;0
+WireConnection;12;2;10;0
 WireConnection;0;2;12;0
 WireConnection;0;11;20;0
 ASEEND*/
-//CHKSM=A4F28132E4AF4A8F40E66C0164885F49181491EF
+//CHKSM=98E1EF50479E60C3F1407858FADA6BAEF95D6204
