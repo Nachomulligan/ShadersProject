@@ -34,7 +34,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _Bias: 0
-    - _NoiseScale: 4.23
+    - _NoiseScale: 0.85
     - _Normal: 1
     - _Power: 1.11
     - _Scale: 1.82
