@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: OceanFloor
+  m_Shader: {fileID: 4800000, guid: 493ceac2225c1114b9b8b8ea72ace72a, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BigNormalTex:
+        m_Texture: {fileID: 2800000, guid: f5173c0fff3a25f4e9a8d8610ce66b9d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SmallNormalTex:
+        m_Texture: {fileID: 2800000, guid: bb2c2ef7744efcc4c90b751a1c54624d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TextureSample0:
+        m_Texture: {fileID: 8900000, guid: 4c1a38546107b094ca8d12e4f578a511, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Amplitude: 0.35
+    - _BigNormalIntensity: 0.729131
+    - _BigNormalTiling: 1
+    - _FakeNormalIntensity: 0.2465822
+    - _Float0: 0
+    - _FresnelPower: 9.35
+    - _FresnelScale: -3.08
+    - _HeightDepthOffset: 2.77
+    - _HeightDepthRange: 2.91
+    - _HeightDiference: 10.25
+    - _HeightOffset: 0.94
+    - _Metallic: 0.1122594
+    - _NumOfWaves: 4
+    - _OpacityDepthFallOff: 0.61
+    - _OpacityDepthRange: 4
+    - _OpacityMultiplier: 0.2529517
+    - _SmalNormalIntensity: 0.1561882
+    - _SmallNormalTiling: 2
+    - _Smoothness: 0.552
+    - _Speed: 1.99
+    - _Steepness: 0.321
+    - _TessValue: 4.2
+    - _WaveLenght: 50
+    - __dirty: 0
+    m_Colors:
+    - _BigNormalSpeed: {r: 0, g: 0, b: 0, a: 0}
+    - _Dir1: {r: -0.2, g: 0, b: -0.22, a: 0}
+    - _Dir2: {r: -0.02, g: 0, b: 0.08, a: 0}
+    - _Dir3: {r: 0.17, g: 0, b: -0.53, a: 0}
+    - _Dir4: {r: 0, g: 0, b: 0, a: 0}
+    - _HighColor: {r: 0.9186845, g: 1, b: 0.709, a: 0}
+    - _LowColor: {r: 0.9335648, g: 1, b: 0.3066038, a: 0}
+    - _SmallNormalSpeed: {r: 0, g: 0.07, b: 0, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
