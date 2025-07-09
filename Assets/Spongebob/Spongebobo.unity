@@ -2006,8 +2006,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f7049b88b018b9418001bbfac56e69a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 40
-  fastMoveSpeed: 80
+  moveSpeed: 80
+  fastMoveSpeed: 160
   mouseSensitivity: 2
   smoothTime: 0.1
   minVerticalAngle: -90
@@ -2028,7 +2028,7 @@ MonoBehaviour:
   texture: {fileID: 2800000, guid: ac7820fe27c3f354cbd795b62b9668c0, type: 3}
   intensity: 1
   threshhold: 0
-  isPostProcessActive: 1
+  isPostProcessActive: 0
 --- !u!1 &1661648476
 GameObject:
   m_ObjectHideFlags: 0
